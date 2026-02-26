@@ -1,8 +1,19 @@
 # wafu-design-system
 
-Japanese-style (和風) UI component library built with Next.js, TypeScript, and Tailwind CSS.
+Japanese-style (和風) UI component library built with React, TypeScript, and Tailwind CSS.
 
 Inspired by traditional Japanese aesthetics — ryokan, onsen, autumn leaves, and bamboo.
+
+## Installation
+
+```bash
+npm install wafu-design-system
+```
+
+```tsx
+import { WafuButton, RyokanCard, SeasonSection } from "wafu-design-system";
+import "wafu-design-system/styles"; // Optional: wafu color tokens
+```
 
 ## Color System
 
@@ -20,51 +31,74 @@ Inspired by traditional Japanese aesthetics — ryokan, onsen, autumn leaves, an
 6 variants × 3 sizes with full accessibility support.
 
 ```tsx
-import { WafuButton } from "@/components/ui";
-
 <WafuButton variant="ai" size="md">予約する</WafuButton>
 <WafuButton variant="momiji">紅葉を見る</WafuButton>
-<WafuButton variant="outline" size="lg">詳細を見る</WafuButton>
 ```
 
 **Variants:** `ai` · `momiji` · `kohaku` · `take` · `ghost` · `outline`
 
-**Sizes:** `sm` · `md` · `lg`
-
 ### RyokanCard
 
-Room card with image, pricing, and booking CTA. Supports `default` and `featured` variants.
+Room card with image, pricing, and booking CTA.
 
 ```tsx
-import { RyokanCard } from "@/components/ui";
-
 <RyokanCard
   roomName="紅葉の間"
   roomType="特別室"
   description="四季折々の庭園を望む特別室。"
   price="¥48,000"
   variant="featured"
-  onCtaClick={() => console.log("予約")}
 />
 ```
 
 ### SeasonSection
 
-Seasonal themed section with spring/summer/autumn/winter styles.
+Seasonal themed section (spring/summer/autumn/winter).
 
 ```tsx
-import { SeasonSection } from "@/components/ui";
-
 <SeasonSection season="autumn" title="紅葉狩り" subtitle="山々が赤く染まる秋。">
   <p>Your content here</p>
 </SeasonSection>
 ```
 
-**Seasons:** `spring` 🌸 · `summer` 🎋 · `autumn` 🍁 · `winter` ❄️
+### WafuFadeIn
+
+Scroll-triggered fade-in animation.
+
+```tsx
+<WafuFadeIn direction="up" delay={200}>
+  <p>ふわっと登場</p>
+</WafuFadeIn>
+```
+
+**Directions:** `up` · `down` · `left` · `right` · `none`
+
+### WafuDivider
+
+Japanese-style section separator.
+
+```tsx
+<WafuDivider variant="dots" />
+<WafuDivider variant="wave" />
+```
+
+**Variants:** `line` · `dots` · `wave`
+
+## i18n
+
+Wrap your app with `WafuI18nProvider` to switch between Japanese and English.
+
+```tsx
+import { WafuI18nProvider } from "wafu-design-system";
+
+<WafuI18nProvider locale="en">
+  <RyokanCard ... /> {/* "Book Now" instead of "予約する" */}
+</WafuI18nProvider>
+```
 
 ## Testing
 
-26 unit tests covering all components (WafuButton, RyokanCard, SeasonSection).
+47 unit tests covering all components.
 
 ```bash
 npm test              # Run unit tests
@@ -74,19 +108,21 @@ npm run test:coverage # With coverage report
 
 ## Tech Stack
 
-- **Next.js 16** + TypeScript
+- **React 19** + TypeScript
 - **Tailwind CSS** (CSS variables)
-- **Storybook** (component catalog + docs)
-- **Vitest** + Testing Library (unit tests)
-- **GitHub Actions** (CI: lint, build, storybook build)
+- **Storybook 10** (component catalog + autodocs)
+- **Vitest** + Testing Library (47 unit tests)
+- **tsup** (ESM/CJS/DTS library build)
+- **GitHub Actions** (CI + CD: auto-publish to npm on release)
 
-## Getting Started
+## Development
 
 ```bash
 npm install
 npm run dev          # Next.js dev server
 npx storybook dev    # Storybook dev server
 npm test             # Run tests
+npm run build:lib    # Build npm package
 ```
 
 ## Roadmap
@@ -95,14 +131,17 @@ npm test             # Run tests
 - [x] WafuButton (6 variants, 3 sizes)
 - [x] RyokanCard (default + featured)
 - [x] SeasonSection (spring/summer/autumn/winter)
+- [x] WafuFadeIn (scroll animation)
+- [x] WafuDivider (line/dots/wave)
 - [x] Storybook integration
-- [x] GitHub Actions CI
-- [x] Unit tests (26 tests)
-- [x] Accessibility (WAI-ARIA attributes)
+- [x] GitHub Actions CI/CD
+- [x] Unit tests (47 tests)
+- [x] Accessibility (WAI-ARIA)
+- [x] i18n (ja/en)
+- [x] npm package build (tsup)
 - [ ] Visual regression testing
-- [ ] npm package publishing
-- [ ] Wafu animations (scroll, fade)
-- [ ] i18n support
+- [ ] Dark theme
+- [ ] Canvas/WebGL wafu effects
 
 ## License
 
