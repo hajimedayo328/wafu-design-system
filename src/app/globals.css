@@ -1,26 +1,85 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* === Wafu Color System === */
+
+  /* Background */
+  --wafu-bg: #F5F5F0;
+  --wafu-bg-warm: #E8E4D9;
+  --wafu-bg-card: #FDFCF8;
+
+  /* Text */
+  --wafu-text-primary: #333333;
+  --wafu-text-secondary: #666666;
+  --wafu-text-muted: #999999;
+  --wafu-text-inverse: #FFFFFF;
+
+  /* Accent - Momiji (紅葉) */
+  --wafu-momiji: #C53D43;
+  --wafu-momiji-bright: #E83929;
+
+  /* Accent - Kohaku (琥珀) */
+  --wafu-kohaku: #C47222;
+  --wafu-kohaku-bright: #E6B422;
+
+  /* Accent - Take (竹) */
+  --wafu-take: #5B8930;
+  --wafu-take-light: #7B8D42;
+
+  /* Accent - Ai (藍) */
+  --wafu-ai: #2B3C5E;
+  --wafu-ai-dark: #1A2744;
+
+  /* Border & Divider */
+  --wafu-border: #E5E0D5;
+  --wafu-border-strong: #C8C2B5;
+
+  /* Semantic aliases */
+  --background: var(--wafu-bg);
+  --foreground: var(--wafu-text-primary);
 }
 
 @theme inline {
+  /* Backgrounds */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --color-wafu-bg: var(--wafu-bg);
+  --color-wafu-bg-warm: var(--wafu-bg-warm);
+  --color-wafu-bg-card: var(--wafu-bg-card);
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  /* Text */
+  --color-wafu-text-primary: var(--wafu-text-primary);
+  --color-wafu-text-secondary: var(--wafu-text-secondary);
+  --color-wafu-text-muted: var(--wafu-text-muted);
+  --color-wafu-text-inverse: var(--wafu-text-inverse);
+
+  /* Momiji */
+  --color-wafu-momiji: var(--wafu-momiji);
+  --color-wafu-momiji-bright: var(--wafu-momiji-bright);
+
+  /* Kohaku */
+  --color-wafu-kohaku: var(--wafu-kohaku);
+  --color-wafu-kohaku-bright: var(--wafu-kohaku-bright);
+
+  /* Take */
+  --color-wafu-take: var(--wafu-take);
+  --color-wafu-take-light: var(--wafu-take-light);
+
+  /* Ai */
+  --color-wafu-ai: var(--wafu-ai);
+  --color-wafu-ai-dark: var(--wafu-ai-dark);
+
+  /* Border */
+  --color-wafu-border: var(--wafu-border);
+  --color-wafu-border-strong: var(--wafu-border-strong);
+
+  /* Fonts */
+  --font-serif-jp: "Noto Serif JP", serif;
+  --font-sans-jp: "Noto Sans JP", sans-serif;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans-jp);
 }
