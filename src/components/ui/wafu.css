@@ -1,0 +1,20 @@
+/* wafu-design-system color tokens */
+:root {
+  --wafu-bg: #F5F5F0;
+  --wafu-bg-warm: #E8E4D9;
+  --wafu-bg-card: #FDFCF8;
+  --wafu-text-primary: #333333;
+  --wafu-text-secondary: #666666;
+  --wafu-text-muted: #999999;
+  --wafu-text-inverse: #FFFFFF;
+  --wafu-momiji: #C53D43;
+  --wafu-momiji-bright: #E83929;
+  --wafu-kohaku: #C47222;
+  --wafu-kohaku-bright: #E6B422;
+  --wafu-take: #5B8930;
+  --wafu-take-light: #7B8D42;
+  --wafu-ai: #2B3C5E;
+  --wafu-ai-dark: #1A2744;
+  --wafu-border: #E5E0D5;
+  --wafu-border-strong: #C8C2B5;
+}

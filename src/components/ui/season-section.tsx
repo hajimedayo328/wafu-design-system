@@ -1,4 +1,5 @@
 import { type ReactNode } from "react";
+import { useWafuTranslations } from "./i18n";
 
 type Season = "spring" | "summer" | "autumn" | "winter";
 
@@ -42,13 +43,6 @@ const seasonConfig: Record<Season, {
   },
 };
 
-const seasonLabel: Record<Season, string> = {
-  spring: "春 — Spring",
-  summer: "夏 — Summer",
-  autumn: "秋 — Autumn",
-  winter: "冬 — Winter",
-};
-
 export function SeasonSection({
   season,
   title,
@@ -56,6 +50,7 @@ export function SeasonSection({
   children,
   className = "",
 }: SeasonSectionProps) {
+  const t = useWafuTranslations();
   const config = seasonConfig[season];
 
   return (
@@ -74,7 +69,7 @@ export function SeasonSection({
           {config.icon}
         </span>
         <span className={["text-xs font-semibold tracking-widest uppercase", config.accent].join(" ")}>
-          {seasonLabel[season]}
+          {t.seasons[season]}
         </span>
       </div>
 

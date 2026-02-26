@@ -1,17 +1,53 @@
 {
   "name": "wafu-design-system",
   "version": "0.1.0",
-  "private": true,
+  "description": "Japanese-style (和風) UI component library built with React and Tailwind CSS",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./styles": "./src/components/ui/wafu.css"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "keywords": [
+    "react",
+    "ui",
+    "design-system",
+    "japanese",
+    "wafu",
+    "tailwind",
+    "components"
+  ],
+  "author": "hajimedayo328",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hajimedayo328/wafu-design-system"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build:lib": "tsup",
     "start": "next start",
     "lint": "eslint",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "test": "vitest run --project unit",
     "test:watch": "vitest --project unit",
-    "test:coverage": "vitest run --project unit --coverage"
+    "test:coverage": "vitest run --project unit --coverage",
+    "prepublishOnly": "npm run build:lib"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
   },
   "dependencies": {
     "next": "16.1.6",
@@ -40,6 +76,7 @@
     "playwright": "^1.58.2",
     "storybook": "^10.2.12",
     "tailwindcss": "^4",
+    "tsup": "^8.5.1",
     "typescript": "^5",
     "vite": "^7.3.1",
     "vitest": "^4.0.18"

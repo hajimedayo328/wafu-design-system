@@ -1,5 +1,6 @@
 import { type ReactNode } from "react";
 import { WafuButton } from "./wafu-button";
+import { useWafuTranslations } from "./i18n";
 
 type RyokanCardVariant = "default" | "featured";
 
@@ -21,14 +22,17 @@ export function RyokanCard({
   roomType = "客室",
   description,
   price,
-  priceUnit = "/ 一泊",
+  priceUnit,
   imageSrc,
   variant = "default",
-  ctaLabel = "予約する",
+  ctaLabel,
   onCtaClick,
   children,
 }: RyokanCardProps) {
+  const t = useWafuTranslations();
   const isFeatured = variant === "featured";
+  const resolvedPriceUnit = priceUnit ?? t.perNight;
+  const resolvedCtaLabel = ctaLabel ?? t.booking;
 
   return (
     <article
@@ -57,7 +61,7 @@ export function RyokanCard({
         )}
         {isFeatured && (
           <span className="absolute top-3 right-3 bg-wafu-kohaku text-white text-xs font-semibold px-2 py-1 rounded-sm">
-            おすすめ
+            {t.recommended}
           </span>
         )}
       </div>
@@ -83,11 +87,11 @@ export function RyokanCard({
               {price}
             </span>
             <span className="text-xs text-wafu-text-muted ml-1">
-              {priceUnit}
+              {resolvedPriceUnit}
             </span>
           </div>
           <WafuButton size="sm" onClick={onCtaClick}>
-            {ctaLabel}
+            {resolvedCtaLabel}
           </WafuButton>
         </div>
       </div>
