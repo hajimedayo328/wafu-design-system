@@ -60,6 +60,7 @@ export function SeasonSection({
 
   return (
     <section
+      aria-label={title}
       className={[
         "rounded-sm border p-8",
         config.bg,

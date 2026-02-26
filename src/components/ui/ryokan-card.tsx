@@ -31,7 +31,8 @@ export function RyokanCard({
   const isFeatured = variant === "featured";
 
   return (
-    <div
+    <article
+      aria-label={roomName}
       className={[
         "rounded-sm border overflow-hidden",
         "transition-shadow duration-300",
@@ -90,6 +91,6 @@ export function RyokanCard({
           </WafuButton>
         </div>
       </div>
-    </div>
+    </article>
   );
 }

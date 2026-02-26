@@ -55,4 +55,10 @@ describe("RyokanCard", () => {
     fireEvent.click(screen.getByRole("button", { name: "予約する" }));
     expect(handleClick).toHaveBeenCalledOnce();
   });
+
+  it("has accessible article element with aria-label", () => {
+    render(<RyokanCard {...defaultProps} />);
+    const article = screen.getByRole("article", { name: "紅葉の間" });
+    expect(article).toBeDefined();
+  });
 });
