@@ -1,0 +1,11 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`WafuDivider Snapshots > variant=dots のHTML構造 1`] = `"<div role="separator" class="flex items-center justify-center gap-3 py-6 "><span class="w-1.5 h-1.5 rounded-full bg-wafu-border-strong"></span><span class="w-2 h-2 rounded-full bg-wafu-momiji"></span><span class="w-1.5 h-1.5 rounded-full bg-wafu-border-strong"></span></div>"`;
+
+exports[`WafuDivider Snapshots > variant=line のHTML構造 1`] = `"<hr class="border-t border-wafu-border my-8 ">"`;
+
+exports[`WafuDivider Snapshots > variant=wave のHTML構造 1`] = `"<div role="separator" class="flex items-center justify-center py-6 "><span class="text-wafu-text-muted text-xl tracking-[0.5em]">〜〜〜</span></div>"`;
+
+exports[`WafuDivider Snapshots > カスタム className 付き 1`] = `"<hr class="border-t border-wafu-border my-8 my-divider">"`;
+
+exports[`WafuDivider Snapshots > デフォルト（line）のHTML構造 1`] = `"<hr class="border-t border-wafu-border my-8 ">"`;

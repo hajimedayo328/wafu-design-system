@@ -1,0 +1,25 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`WafuButton Snapshots > aria-label 付きのHTML構造 1`] = `"<button class="inline-flex items-center justify-center gap-2 font-medium rounded-sm transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-wafu-ai disabled:opacity-50 disabled:pointer-events-none bg-wafu-ai text-wafu-text-inverse hover:bg-wafu-ai-dark px-5 py-2.5 text-sm " aria-label="予約ボタン">テスト</button>"`;
+
+exports[`WafuButton Snapshots > disabled 状態のHTML構造 1`] = `"<button class="inline-flex items-center justify-center gap-2 font-medium rounded-sm transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-wafu-ai disabled:opacity-50 disabled:pointer-events-none bg-wafu-ai text-wafu-text-inverse hover:bg-wafu-ai-dark px-5 py-2.5 text-sm " disabled="">テスト</button>"`;
+
+exports[`WafuButton Snapshots > size=lg のHTML構造 1`] = `"<button class="inline-flex items-center justify-center gap-2 font-medium rounded-sm transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-wafu-ai disabled:opacity-50 disabled:pointer-events-none bg-wafu-ai text-wafu-text-inverse hover:bg-wafu-ai-dark px-7 py-3 text-base ">テスト</button>"`;
+
+exports[`WafuButton Snapshots > size=md のHTML構造 1`] = `"<button class="inline-flex items-center justify-center gap-2 font-medium rounded-sm transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-wafu-ai disabled:opacity-50 disabled:pointer-events-none bg-wafu-ai text-wafu-text-inverse hover:bg-wafu-ai-dark px-5 py-2.5 text-sm ">テスト</button>"`;
+
+exports[`WafuButton Snapshots > size=sm のHTML構造 1`] = `"<button class="inline-flex items-center justify-center gap-2 font-medium rounded-sm transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-wafu-ai disabled:opacity-50 disabled:pointer-events-none bg-wafu-ai text-wafu-text-inverse hover:bg-wafu-ai-dark px-3 py-1.5 text-sm ">テスト</button>"`;
+
+exports[`WafuButton Snapshots > variant=ai のHTML構造 1`] = `"<button class="inline-flex items-center justify-center gap-2 font-medium rounded-sm transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-wafu-ai disabled:opacity-50 disabled:pointer-events-none bg-wafu-ai text-wafu-text-inverse hover:bg-wafu-ai-dark px-5 py-2.5 text-sm ">テスト</button>"`;
+
+exports[`WafuButton Snapshots > variant=ghost のHTML構造 1`] = `"<button class="inline-flex items-center justify-center gap-2 font-medium rounded-sm transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-wafu-ai disabled:opacity-50 disabled:pointer-events-none bg-transparent text-wafu-text-primary hover:bg-wafu-bg-warm px-5 py-2.5 text-sm ">テスト</button>"`;
+
+exports[`WafuButton Snapshots > variant=kohaku のHTML構造 1`] = `"<button class="inline-flex items-center justify-center gap-2 font-medium rounded-sm transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-wafu-ai disabled:opacity-50 disabled:pointer-events-none bg-wafu-kohaku text-wafu-text-inverse hover:bg-wafu-kohaku-bright px-5 py-2.5 text-sm ">テスト</button>"`;
+
+exports[`WafuButton Snapshots > variant=momiji のHTML構造 1`] = `"<button class="inline-flex items-center justify-center gap-2 font-medium rounded-sm transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-wafu-ai disabled:opacity-50 disabled:pointer-events-none bg-wafu-momiji text-wafu-text-inverse hover:bg-wafu-momiji-bright px-5 py-2.5 text-sm ">テスト</button>"`;
+
+exports[`WafuButton Snapshots > variant=outline のHTML構造 1`] = `"<button class="inline-flex items-center justify-center gap-2 font-medium rounded-sm transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-wafu-ai disabled:opacity-50 disabled:pointer-events-none bg-transparent text-wafu-text-primary border border-wafu-border hover:border-wafu-border-strong hover:bg-wafu-bg-warm px-5 py-2.5 text-sm ">テスト</button>"`;
+
+exports[`WafuButton Snapshots > variant=take のHTML構造 1`] = `"<button class="inline-flex items-center justify-center gap-2 font-medium rounded-sm transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-wafu-ai disabled:opacity-50 disabled:pointer-events-none bg-wafu-take text-wafu-text-inverse hover:bg-wafu-take-light px-5 py-2.5 text-sm ">テスト</button>"`;
+
+exports[`WafuButton Snapshots > カスタム className 付きのHTML構造 1`] = `"<button class="inline-flex items-center justify-center gap-2 font-medium rounded-sm transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-wafu-ai disabled:opacity-50 disabled:pointer-events-none bg-wafu-ai text-wafu-text-inverse hover:bg-wafu-ai-dark px-5 py-2.5 text-sm custom-class">テスト</button>"`;

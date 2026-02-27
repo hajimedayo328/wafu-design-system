@@ -1,0 +1,15 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`WafuFadeIn Snapshots > direction=down の初期HTML構造 1`] = `"<div class="transition-all ease-out opacity-0 -translate-y-6 " style="transition-duration: 700ms; transition-delay: 0ms;">テスト</div>"`;
+
+exports[`WafuFadeIn Snapshots > direction=left の初期HTML構造 1`] = `"<div class="transition-all ease-out opacity-0 translate-x-6 " style="transition-duration: 700ms; transition-delay: 0ms;">テスト</div>"`;
+
+exports[`WafuFadeIn Snapshots > direction=none の初期HTML構造 1`] = `"<div class="transition-all ease-out opacity-0  " style="transition-duration: 700ms; transition-delay: 0ms;">テスト</div>"`;
+
+exports[`WafuFadeIn Snapshots > direction=right の初期HTML構造 1`] = `"<div class="transition-all ease-out opacity-0 -translate-x-6 " style="transition-duration: 700ms; transition-delay: 0ms;">テスト</div>"`;
+
+exports[`WafuFadeIn Snapshots > direction=up の初期HTML構造 1`] = `"<div class="transition-all ease-out opacity-0 translate-y-6 " style="transition-duration: 700ms; transition-delay: 0ms;">テスト</div>"`;
+
+exports[`WafuFadeIn Snapshots > カスタム className 付き 1`] = `"<div class="transition-all ease-out opacity-0 translate-y-6 my-custom" style="transition-duration: 700ms; transition-delay: 0ms;">テスト</div>"`;
+
+exports[`WafuFadeIn Snapshots > カスタム delay + duration 1`] = `"<div class="transition-all ease-out opacity-0 translate-y-6 " style="transition-duration: 1000ms; transition-delay: 200ms;">テスト</div>"`;
